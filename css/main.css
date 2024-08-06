@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  font-family: "Libre Bodoni", serif;
+  font-weight: 600;
+}
+
+h1 {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  padding-top: 3%;
+}
+header .logo {
+  width: 30%;
+}
+header .navbar {
+  border-top: black solid 0.1em;
+  border-bottom: black solid 0.1em;
+}
+
+section {
+  padding: 1%;
+  margin: 2%;
+}
+
+footer {
+  padding: 10%;
+  border-top: black solid 1em;
+}
+
+/*# sourceMappingURL=main.css.map */

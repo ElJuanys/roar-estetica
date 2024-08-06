@@ -1,0 +1,16 @@
+//RESET
+@import './config/vars';
+@import './config/reset';
+@import './config/maps';
+@import './config/mixin';
+@import './config/general';
+
+//NAV
+@import './partials/titulo';
+@import './partials/navegador';
+//MAIN
+@import './pages/index';
+//FOOTER
+@import './partials/footer';
+//MediaQuery
+@import './config/mq';
