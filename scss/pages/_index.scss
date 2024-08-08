@@ -1,4 +1,46 @@
+.entrada{
+    margin-top:5%;
+    .caja-titulo{
+        margin-top: 20% !important;
+        .carta-titulo{
+            font-size: 3em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+    .carta-centro{
+        font-size: 1em;
+        color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: center;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        .link1,.link2{
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background: linear-gradient(180deg, #676767 26%, #404040 80%);
+            border: solid black 0.1em;
+        }
+    }
+}
+.desplegable{
+    display: flex;
+    justify-content: center;
+}
 section{
     padding: 1%;
     margin:2%;
 }
+
+
+
+
+
