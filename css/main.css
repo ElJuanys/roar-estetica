@@ -1,4 +1,5 @@
 .button2 {
+  text-align: center;
   display: inline-block;
   transition: all 0.2s ease-in;
   position: relative;
@@ -66,6 +67,7 @@
 
 /* From Uiverse.io by mrhyddenn */
 .link3 {
+  text-align: center;
   text-decoration: none;
   color: black;
   background: linear-gradient(180deg, #676767 26%, #404040 80%);
@@ -128,9 +130,10 @@ header .navbar {
 
 .entrada {
   margin-top: 5%;
+  width: 100%;
 }
 .entrada .caja-titulo {
-  margin-top: 20% !important;
+  margin-top: 10% !important;
 }
 .entrada .caja-titulo .carta-titulo {
   font-size: 3em;
@@ -149,6 +152,7 @@ header .navbar {
 .entrada .links {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .entrada .links .link1, .entrada .links .link2 {
   color: black;
