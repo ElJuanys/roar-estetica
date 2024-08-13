@@ -1,90 +1,25 @@
-.button2{
 
-}
-.button2 {
-    text-align: center;
-    display: inline-block;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    color: #090909;
-    text-decoration: none;
-    padding: 0.7em 1.7em;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: linear-gradient(180deg, #676767 26%, #404040 80%);
-}
+$degrade:linear-gradient(56deg, #d7bcb1b4 3%, #e6b598b4 17%, #daa2a8b4 41%, #6ca2beb4 62%, #8fb1c6b4 76%, #ffffffb4 95%);
 
-.button2:active {
-    color: #858585;
-}
 
-.button2:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
 
-.button2:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: #858585;
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
 
-.button2:hover {
-    color: #ffffff;
-    border: 1px solid #858585;
-}
 
-.button2:hover:before {
-    top: -35%;
-    background-color: #858585;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.button2:hover:after {
-    top: -45%;
-    background-color: #858585;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-/* From Uiverse.io by mrhyddenn */ 
-.link3 {
+.botones {
     text-align: center;
     text-decoration: none;
     color: black;
     background: linear-gradient(180deg, #676767 26%, #404040 80%);
     border: none;
-    padding: 10px 20px;
+    padding: 1em 1.5em;
     display: inline-block;
-    font-size: 15px;
     font-weight: 600;
     width: 120px;
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);
 }
-.link3::before {
+.botones::before {
     content: '';
     position: absolute;
     top: 0;
@@ -97,12 +32,159 @@
     transition: all 0.5s;
   }
   
-  .link3:hover {
+  .botones:hover {
     color: #fff;
   }
   
-  .link3:hover::before {
+  .botones:hover::before {
     left: 0;
     right: 0;
     opacity: 1;
   }
+
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  background: linear-gradient(56deg, #d7bcb1b4 3%, #e6b598b4 17%, #daa2a8b4 41%, #6ca2beb4 62%, #8fb1c6b4 76%, #ffffffb4 95%);
+}
+.button__icon{
+  border-left: 1px solid black;
+}
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: black;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background: $degrade;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: black;
+}
+
+.button:hover {
+  background: $degrade;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: $degrade;
+}
+
+.button:active {
+  border: 1px solid $degrade;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:$degrade;
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background: $degrade;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+
+
+/* From Uiverse.io by NorthFishHasNa */ 
+.botones12{
+  display: inline-block;
+  border-radius: 4px;
+  background: $degrade;
+  border: none;
+  color: black;
+  text-align: center;
+  padding: 4px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+ 
+ .botones12 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ .botones12 span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ .botones12:hover span {
+  padding-right: 15px;
+ }
+ 
+ .botones12:hover span:after {
+  opacity: 1;
+  right: 0;
+ }

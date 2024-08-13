@@ -1,10 +1,10 @@
 .entrada{
-    margin-top:5%;
     width: 100%;
     .caja-titulo{
-        margin-top: 10% !important;
+        width: 100%;
+        padding: 2%;
         .carta-titulo{
-            font-size: 3em;
+            font-size: 300%;
             color: black;
             display: flex;
             justify-content: center;
@@ -33,16 +33,91 @@
         }
     }
 }
-.desplegable{
-    display: flex;
-    justify-content: center;
-}
+
 section{
     padding: 1%;
     margin:2%;
 }
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin:-1px !important;
+}
+.imagen{
+    display: flex;
+    align-items: end;
+    .titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 300%;
+        color: #ffffff;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    }
+    .barra{
+        height: 20%;
+        background:$degrade;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: black;
+            border: solid black 0.1em;
+            text-decoration: none;
+            padding:0.3em 1em 0.3em 1em;
+            padding-right: 1em;
+        }
+    }
+    .barra1{
+        height: 20%;
+        margin-bottom:40%;
+        background:$degrade;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: black;
+            border: solid black 0.1em;
+            text-decoration: none;
+            padding:0.3em 1em 0.3em 1em;
+            padding-right: 1em;
+        }
+    }
+}
 
-
-
-
-
+.ejemplo2{
+    display: flex;
+    align-items: end;
+    border: 0.2em solid transparent;
+    border-image: linear-gradient(to right, #d7bcb1,#e6b498 , #daa2a8 , #6ca2be , #8fb1c6);
+    border-image-slice: 1;
+    margin: 1em;
+    .titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 300%;
+        color: #ffffff;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    }
+    .barra{
+        height: 20%;
+        background: $degrade;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: black;
+            border: solid black 0.1em;
+            text-decoration: none;
+            padding:0.3em 1em 0.3em 1em;
+            padding-right: 1em;
+        }
+    }
+}

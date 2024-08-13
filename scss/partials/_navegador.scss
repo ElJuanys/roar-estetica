@@ -1,14 +1,30 @@
 header{
     //background: rgb(215,188,177);
     //background: linear-gradient(56deg, rgba(215,188,177,1) 3%, rgba(230,180,152,1) 17%, rgba(218,162,168,1) 41%, rgba(108,162,190,1) 62%, rgba(143,177,198,1) 76%, rgba(255,255,255,1) 95%);
-    padding-top:3%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    color:white;
     .logo{
         width: 30%;
     }
+    .desplegable{
+        color:white;
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color:white;
+                }
+                
+            }
+        }
+    }
     .navbar{
-        border-top: black solid 0.1em;
-        border-bottom: black solid 0.1em;
+        background: linear-gradient(56deg, #d7bcb1b4 3%, #e6b598b4 17%, #daa2a8b4 41%, #6ca2beb4 62%, #8fb1c6b4 76%, #ffffffb4 95%);
+        
     }  
+
 }
 
 
