@@ -190,111 +190,11 @@
 }
 
 /* From Uiverse.io by vinodjangid07 */
-.arriba {
-  width: 100%;
-  margin-top: -200px;
-}
-
-.imagenes2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.imagenes2 div {
-  transition: 1s;
-}
-
-.imagenes2 div:hover {
-  transition: 1s;
-  overflow: hidden;
-  width: 30%;
-}
-
-.imagenes2 img {
-  width: 100%;
-}
-
-footer {
-  background-color: gray;
-  display: flex;
-}
-
 iframe {
   width: 100%;
 }
 
-/* for all social containers*/
-.socialContainer {
-  width: 52px;
-  height: 52px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
-}
-
-.redondo {
-  border-radius: 50%;
-}
-
-.cuadrada {
-  border-radius: 10%;
-}
-
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
-}
-
-/* twitter*/
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: 0.3s;
-}
-
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0072b1;
-  transition-duration: 0.3s;
-}
-
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128C7E;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 17px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-h1 {
+h1, h2 {
   text-shadow: 0px 2px 4px rgb(0, 0, 0);
   margin: 0 !important;
 }
@@ -324,9 +224,10 @@ h1 {
 }
 
 header {
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0em;
   z-index: 1000;
+  width: 100%;
   color: white;
 }
 header .logo {
@@ -345,63 +246,58 @@ header .navbar {
   background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
 }
 
-.entrada {
-  width: 100%;
-}
-.entrada .caja-titulo {
-  width: 100%;
-  padding: 2%;
-}
-.entrada .caja-titulo .carta-titulo {
-  font-size: 300%;
-  color: black;
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 10%;
+  background-color: rgb(44, 44, 44);
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.entrada .carta-centro {
-  font-size: 1em;
-  color: rgb(240, 240, 240);
-  display: flex;
-  justify-content: center;
-  text-shadow: 0px 2px 4px rgb(0, 0, 0);
-}
-.entrada .links {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-}
-.entrada .links .link1, .entrada .links .link2 {
-  color: black;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background: linear-gradient(180deg, #676767 26%, #404040 80%);
-  border: solid black 0.1em;
+  overflow: hidden;
+  transition-duration: 0.3s;
 }
 
-section {
-  padding: 1%;
-  margin: 2%;
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
 }
 
-.carrusel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: 0.3s;
 }
 
-.caja-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
 }
 
-.card {
-  margin: -1px !important;
+.socialSvg {
+  width: 17px;
+  animation: slide-in-top 0.3s both;
+}
+.socialSvg path {
+  fill: rgb(255, 255, 255);
 }
 
+.socialContainer:hover {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .imagen {
   display: flex;
   align-items: end;
@@ -473,9 +369,40 @@ section {
   padding-right: 1em;
 }
 
+.arriba {
+  width: 100%;
+  margin-top: -200px;
+}
+
+.imagenes2 {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid black 0.1em;
+  border-bottom: solid black 0.1em;
+  background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
+}
+.imagenes2 img {
+  margin-top: 10%;
+  width: 100%;
+  padding: 4%;
+}
+.imagenes2 a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.servicio {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
+}
 footer {
   padding: 10%;
   border-top: black solid 1em;
+  background-color: gray;
+  display: flex;
 }
 
 h4 {
@@ -488,10 +415,6 @@ h4 {
 
 .ayd div {
   width: 100%;
-}
-
-.resumen {
-  background-color: rgb(233, 189, 109);
 }
 
 /*# sourceMappingURL=main.css.map */
