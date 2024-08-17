@@ -251,6 +251,9 @@ header .desplegable ul li a {
 header .navbar {
   background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
 }
+header .fondo-menu {
+  background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
+}
 
 /* for all social containers*/
 .socialContainer {
@@ -373,33 +376,46 @@ header .navbar {
 
 .arriba {
   width: 100%;
-  margin-top: -200px;
+  margin-top: -250px;
 }
 
-.imagenes2 {
+.seleccion {
   display: flex;
-  justify-content: space-around;
-  border-top: solid black 0.1em;
-  border-bottom: solid black 0.1em;
+  justify-content: space-evenly;
   background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
 }
-.imagenes2 img {
+.seleccion .imagenes2 {
+  display: flex;
+}
+.seleccion .imagenes2 img {
   margin-top: 10%;
   width: 100%;
   padding: 4%;
 }
-.imagenes2 a {
+.seleccion .imagenes2 a {
   text-decoration: none;
   text-align: center;
   color: black;
 }
 
 .servicio {
-  margin-top: 4%;
+  margin: 2%;
+  padding: 3%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(56deg, rgba(215, 188, 177, 0.7058823529) 3%, rgba(230, 181, 152, 0.7058823529) 17%, rgba(218, 162, 168, 0.7058823529) 41%, rgba(108, 162, 190, 0.7058823529) 62%, rgba(143, 177, 198, 0.7058823529) 76%, rgba(255, 255, 255, 0.7058823529) 95%);
+  border: solid 0.2em transparent;
+  border-image: linear-gradient(to right, #d7bcb1, #e6b498, #daa2a8, #6ca2be, #8fb1c6);
+  border-image-slice: 1;
+  background-color: #F3EDDA;
 }
+.ayd {
+  display: flex;
+}
+
+.ayd div {
+  width: 100%;
+}
+
 footer {
   padding: 10%;
   border-top: black solid 1em;
@@ -409,14 +425,6 @@ footer {
 
 h4 {
   width: 50%;
-}
-
-.ayd {
-  display: flex;
-}
-
-.ayd div {
-  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

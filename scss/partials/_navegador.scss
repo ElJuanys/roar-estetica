@@ -30,7 +30,10 @@ header{
     .navbar{
         background: linear-gradient(56deg, #d7bcb1b4 3%, #e6b598b4 17%, #daa2a8b4 41%, #6ca2beb4 62%, #8fb1c6b4 76%, #ffffffb4 95%);
         
-    }  
+    } 
+    .fondo-menu{
+        background: $degrade;
+    } 
 
 }
 
