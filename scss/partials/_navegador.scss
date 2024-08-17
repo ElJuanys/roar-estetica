@@ -9,6 +9,12 @@ header{
     .logo{
         width: 30%;
     }
+    .nombre{
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    }
     .desplegable{
         color:white;
         ul{

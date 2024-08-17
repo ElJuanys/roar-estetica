@@ -233,6 +233,12 @@ header {
 header .logo {
   width: 30%;
 }
+header .nombre {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
 header .desplegable {
   color: white;
 }
@@ -305,7 +311,6 @@ header .navbar {
 .imagen .titulo {
   display: flex;
   justify-content: center;
-  font-size: 300%;
   color: #ffffff;
   text-shadow: 0px 2px 4px rgb(0, 0, 0);
 }
@@ -333,10 +338,7 @@ header .navbar {
 }
 .imagen .barra1 a {
   color: black;
-  border: solid black 0.1em;
   text-decoration: none;
-  padding: 0.3em 1em 0.3em 1em;
-  padding-right: 1em;
 }
 
 .ejemplo2 {
@@ -350,7 +352,7 @@ header .navbar {
 .ejemplo2 .titulo {
   display: flex;
   justify-content: center;
-  font-size: 300%;
+  font-size: 200%;
   color: #ffffff;
   text-shadow: 0px 2px 4px rgb(0, 0, 0);
 }
