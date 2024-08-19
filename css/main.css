@@ -225,6 +225,10 @@ header {
   width: 100%;
   color: white;
 }
+header a {
+  color: white;
+  text-decoration: none;
+}
 header .logo {
   width: 30%;
 }
