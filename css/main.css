@@ -219,7 +219,7 @@ h2 {
 }
 
 .solapas {
-  height: 13em;
+  height: 17em;
 }
 
 .solapas-min {
@@ -396,7 +396,8 @@ header .fondo-menu {
 }
 .seleccion .imagenes2 img {
   margin-top: 10%;
-  width: 100%;
+  width: 8em;
+  height: 5em;
   padding: 4%;
 }
 .seleccion .imagenes2 a {
